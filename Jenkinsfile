@@ -1,5 +1,5 @@
 pipeline{
-  agent {label 'slave2'}
+  agent { label 'slave2' }
         stage('checkout n build'){
             steps{
                 sh "git clone repourl"
