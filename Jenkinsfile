@@ -1,10 +1,9 @@
 pipeline{
   agent { label 'slave2' }
-        stage('checkout n build'){
+  stages{
+        stage('install packages'){
             steps{
-                sh "git clone repourl"
-                sh "cd directory"
-                sh "mvn clean package"
+                sh "sh install_using_functions.sh"
             }
         }
     }
