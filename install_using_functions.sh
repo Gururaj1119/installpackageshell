@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su -
 install_aws_cli()
 {
     sudo apt-get update
